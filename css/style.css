@@ -13,6 +13,7 @@
     --color-dark:#363949;
     --color-ligth: rgba(132, 139, 200, 0.18);
     --color-primary-variant:#111e88;
+    --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
     --card-border-radius: 2rem;
@@ -46,7 +47,15 @@ body{
     font-size: 0.88rem;
     background: var(--color-background);
     user-select: none;
-    overflow: scroll;
+    overflow: hidden;
+}
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+
 }
 
 a{
@@ -88,6 +97,57 @@ small{
     color: var(--color-info-dark);
 }
 
+p{
+    color: var(--color-dark-variant);
+}
 
+b{
+    color: var(--color-dark);
+}
+.primary{
+    color: var(--color-primary);
+}
+.danger{
+    color: var(--color-danger);
+}
+.success{
+    color: var(--color-sucess);
+}
+.warning{
+    color: var(--color-warning);
+}
 
+aside{
+    height: 100vh;
+    background: gray;
+}
 
+aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo{
+    display: flex;
+    gap: 0.8rem;
+}
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+aside .close {
+    display: none;
+}
+
+/* =============== ASIDE BAR =============== */
+
+aside .sidebar{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
